@@ -1,0 +1,1401 @@
+/* animation */
+
+@keyframes rotate {
+    0% {
+        transform: rotateZ(0deg);
+    }
+
+    100% {
+        transform: rotateZ(360deg);
+    }
+}
+
+@keyframes wid-2 {
+    0% {
+        transform: scale(1);
+    }
+
+    25% {
+        transform: scale(0.96);
+    }
+
+    50% {
+        transform: scale(1);
+    }
+
+    75% {
+        transform: scale(1.04);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes wid {
+    0% {
+        transform: scale(1);
+    }
+
+    25% {
+        transform: scale(1.04);
+    }
+
+    50% {
+        transform: scale(1);
+    }
+
+    75% {
+        transform: scale(0.96);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes rotate-reverse {
+    0% {
+        transform: rotateZ(0deg);
+    }
+
+    100% {
+        transform: rotateZ(-360deg);
+    }
+}
+
+@keyframes cyberpop {
+    0% {
+        transform: scale(0.7);
+        opacity: 0;
+        box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.6);
+    }
+    70% {
+        transform: scale(1.05);
+        box-shadow: 0 0 20px 8px rgba(255, 255, 255, 0.8);
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+        box-shadow: 0 0 10px 0 rgba(138, 142, 142, 0.5);
+    }
+}
+
+/* glav */
+
+.rolik-img {
+    width: 100%;
+}
+
+.vkus {
+    width: 100%;
+}
+
+p {
+    font-family: "Inter", sans-serif;
+}
+
+h1 {
+    font-family: "Inter", sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    /* background-color: #0D0D0D; */
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    width: 1920px;
+    overflow-x: hidden;
+
+}
+
+a {
+    text-decoration: none;
+}
+
+.colortext {
+    color: orange;
+}
+
+.glav-nav-text {
+    color: orange;
+    font-family: "Great Vibes", cursive;
+    width: fit-content;
+}
+
+/* Шапка */
+
+h2 {
+    width: max-content;
+}
+
+h1 {
+    width: max-content;
+}
+
+header {
+    width: 100% auto;
+    position: relative;
+}
+
+.header-logo-color {
+    color: orange;
+    font-family: Helvetica;
+}
+
+.header-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text {
+    color: white;
+}
+
+.header-nav {
+    color: white;
+    display: flex;
+    align-items: center;
+    margin-left: 200px;
+}
+
+.nav-list-link {
+    text-decoration: none;
+    word-spacing: 32px;
+    color: white;
+    transition: 0.5s ease;
+    position: relative;
+    display: inline-block;
+}
+
+.nav-list-link::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: linear-gradient(90deg, #FF9F0D, #FF8400);
+    transition: width 0.3s ease, opacity 0.3s ease;
+    opacity: 0;
+    box-shadow: 0 0 8px rgba(255, 159, 13, 0.6);
+}
+
+.nav-list-link:hover::after {
+    width: 100%;
+    opacity: 1;
+}
+
+.nav-lists {
+    display: flex;
+    justify-content: space-between;
+    gap: 32px;
+}
+
+ul {
+    list-style: none;
+}
+
+.input-wrapper {
+    display: inline-block;
+    padding: 2px;
+    border-radius: 30px;
+    background: linear-gradient(90deg,
+            #ff8400,
+            #cf6e0c,
+            #a05909,
+            #9f6707d6,
+            #724009,
+            #fa8d11,
+            #a15c23,
+            #794b07,
+            #ff7300);
+    background-size: 400% 400%;
+    animation: rainbowBorder 3s ease-in-out infinite;
+    position: absolute;
+    left: 70%;
+}
+
+.poisk {
+    width: 250px;
+    height: 40px;
+    border: none;
+    outline: none;
+    border-radius: 27px;
+    padding: 0 16px;
+    background-color: black;
+    color: rgb(255, 156, 7);
+    font-family: 'Orbitron', sans-serif;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+@keyframes rainbowBorder {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+
+
+button {
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+button:hover {
+    transform: scale(1.04);
+}
+
+.header-poisk-decoration {
+    position: absolute;
+    left: 85%;
+}
+
+/* 1 страница */
+
+.menu-button::after {
+    background-color: #ffffffc5;
+    z-index: 20;
+    animation: ripple 6s linear infinite;
+}
+
+.glav {
+    padding-top: 161px;
+    margin-left: 200px;
+    display: flex;
+    gap: 93px;
+}
+
+.glav-text {
+    color: white;
+    width: fit-content;
+}
+
+.knopka {
+    width: fit-content;
+}
+
+button {
+    color: white;
+    border-radius: 20px;
+    height: 40px;
+    width: 120px;
+    background-color: orange;
+    border: none;
+}
+
+.img-glav {
+    width: 878px;
+    height: 670px;
+    position: relative;
+    left: 200px;
+}
+
+.Tarelki {
+    position: absolute;
+    top: -80px;
+    z-index: 2;
+    animation: rotate 30s linear infinite;
+}
+
+.knopka2 {
+    border: 1px solid orange;
+}
+
+.knopka3 {
+    border: 1px solid orange;
+}
+
+.Ellipse {
+    position: absolute;
+    top: -60px;
+    left: 20px;
+    z-index: 1;
+}
+
+.Rectangle {
+    position: absolute;
+    z-index: 10;
+    top: -60px;
+    left: 70px;
+    animation: rotate-reverse 50s linear infinite;
+}
+
+.image123 {
+    position: absolute;
+    left: 480px;
+    top: -110px;
+}
+
+.List-1 {
+    position: absolute;
+    left: 530px;
+    top: -70px;
+    z-index: 7;
+    animation: wid 5s linear infinite;
+}
+
+.List-2 {
+    position: absolute;
+    left: 480px;
+    top: 285px;
+    z-index: 8;
+    animation: wid-2 5s linear infinite;
+}
+
+/* 2 страница */
+
+.description {
+    margin-left: 200px;
+    margin-top: 120px;
+    height: 580px;
+}
+
+.description-text {
+    color: white;
+    margin-left: 25px;
+    width: fit-content;
+}
+
+.description-button {
+    width: fit-content;
+}
+
+.foto1 {
+    position: relative;
+    left: 760px;
+    top: -370px;
+    border-radius: 10px;
+}
+
+.foto2 {
+    position: relative;
+    left: 760px;
+    top: -370px;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+
+.foto3 {
+    position: relative;
+    left: 770px;
+    top: -370px;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+
+.glavfoto {
+    position: relative;
+    top: -20px;
+    height: 250px;
+}
+
+/* 3 страница */
+
+.Food-Category {
+    margin-top: 120px;
+}
+
+.glav-nav-text-Food-Category {
+    color: orange;
+    font-family: "Great Vibes", cursive;
+    position: relative;
+    left: 871px;
+    width: max-content;
+}
+
+.glav-text-Food-Category {
+    color: white;
+    position: relative;
+    left: 835px;
+    width: max-content;
+}
+
+.vkus {
+    position: relative;
+    left: 285px;
+    width: max-content;
+}
+
+.vkuss:hover {
+    width: 300px;
+    height: 323px;
+    margin-right: 25px;
+}
+
+.vkuss3:hover {
+    width: 300px;
+    height: 323px;
+    margin-right: 25px;
+}
+
+.vkuss {
+    border-radius: 10px;
+    margin-right: 20px;
+    transition: all 0.3s ease;
+}
+
+.vkuss3 {
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+/* 4 страница */
+
+.description-two {
+    margin-top: 200px;
+    height: 716px;
+}
+
+.description-two-text {
+    position: relative;
+    left: 960px;
+    width: 550px;
+}
+
+.glav-color-text {
+    color: white;
+}
+
+.food-img {
+    width: fit-content;
+}
+
+.foto4 {
+    position: relative;
+    left: 200px;
+    top: -360px;
+    border-radius: 10px;
+
+}
+
+.foto5 {
+    position: relative;
+    top: -360px;
+    left: 200px;
+    border-radius: 10px;
+    margin-left: 10px;
+}
+
+.foto6 {
+    position: relative;
+    right: 455px;
+    top: -40px;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+.foto7 {
+    position: relative;
+    right: 455px;
+    top: -120px;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.foto8 {
+    position: relative;
+    right: 455px;
+    top: -178px;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.foto9 {
+    position: relative;
+    right: 630px;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.ikon-img {
+    width: fit-content;
+}
+
+.ikonka1 {
+    width: 102px;
+    height: 100px;
+    border-radius: 10px;
+    background-color: orange;
+    position: relative;
+    left: 960px;
+    top: -360px;
+}
+
+.ikonka2 {
+    position: relative;
+    left: 1060px;
+    top: -460px;
+    width: 102px;
+    height: 100px;
+    border-radius: 10px;
+    background-color: orange;
+    margin-left: 20px;
+}
+
+.ikonka3 {
+    position: relative;
+    left: 1180px;
+    top: -560px;
+    width: 102px;
+    height: 100px;
+    border-radius: 10px;
+    background-color: orange;
+    margin-left: 20px;
+}
+
+.ikonka-img {
+    width: fit-content;
+}
+
+.text17 {
+    color: white;
+    position: relative;
+    left: 976px;
+    top: -570px;
+    width: 85px;
+}
+
+.text18 {
+    color: white;
+    position: relative;
+    left: 1110px;
+    top: -609.5px;
+    width: 53px;
+}
+
+.text19 {
+    color: white;
+    position: relative;
+    left: 1226px;
+    top: -649px;
+    width: 56px;
+}
+
+.ikonka4,
+.ikonka5,
+.ikonka6 {
+    position: relative;
+    left: 23px;
+    top: 22px;
+}
+
+.text20 {
+    width: 374px;
+    height: 93px;
+    border-radius: 10px;
+    background-color: orange;
+    position: relative;
+    left: 960px;
+    top: -640px;
+}
+
+.text21 {
+    width: 364px;
+    height: 93px;
+    border-radius: 10px;
+    background-color: white;
+    position: relative;
+    left: 970px;
+    top: -733px;
+}
+
+.text22 {
+    color: orange;
+    font-size: 48px;
+    position: relative;
+    left: 985px;
+    top: -809px;
+    align-items: center;
+    justify-content: center;
+    width: max-content;
+    margin: 0;
+}
+
+.text23 {
+    position: relative;
+    left: 1120px;
+    top: -875px;
+    align-items: center;
+    font-size: 30px;
+    justify-content: center;
+    width: max-content;
+    margin: 0;
+}
+
+/* 5 страница */
+
+.estimation {
+    height: 469px;
+    position: relative;
+}
+
+.fotoblock {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 20%;
+    left: 18%;
+    gap: 162px;
+    height: 247px;
+    width: 1200px;
+}
+
+.foto10 {
+    width: 218px;
+    height: 247px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    gap: 24px;
+}
+
+.foto11 {
+    width: 162px;
+    height: 247px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    gap: 24px;
+}
+
+.foto12 {
+    width: 248px;
+    height: 247px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    gap: 24px;
+}
+
+.foto13 {
+    width: 206px;
+    height: 247px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    gap: 24px;
+}
+
+.textblock {
+    font-size: 24px;
+    color: white;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+.textblock1 {
+    font-size: 24px;
+    color: white;
+    margin: 0;
+    margin-top: 24px;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+.textblock2 {
+    font-size: 24px;
+    color: white;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+.textblock3 {
+    font-size: 24px;
+    color: white;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+.textblock4 {
+    font-size: 40px;
+    color: white;
+    position: absolute;
+    margin: 0;
+    width: max-content;
+    top: 90%;
+}
+
+.textblock5 {
+    font-size: 40px;
+    color: white;
+    position: absolute;
+    margin: 0;
+    width: max-content;
+    top: 90%;
+}
+
+.textblock6 {
+    font-size: 40px;
+    color: white;
+    position: absolute;
+    margin: 0;
+    width: max-content;
+    top: 90%;
+}
+
+.textblock7 {
+    font-size: 40px;
+    color: white;
+    position: absolute;
+    margin: 0;
+    width: max-content;
+    top: 90%;
+}
+
+/* 6 страница */
+
+.types-of-goods {
+    height: 660px;
+    margin-bottom: 120px;
+}
+
+.glavtext {
+    color: orange;
+    font-family: "Great Vibes", cursive;
+    position: relative;
+    left: 847px;
+    width: max-content;
+}
+
+.glavtext1 {
+    color: white;
+    position: relative;
+    left: 815px;
+    width: max-content;
+}
+
+.q1 {
+    display: flex;
+    margin-left: 305px;
+    color: white;
+    position: relative;
+    top: 50px;
+    font-size: 20px;
+}
+
+.colortext5 {
+    color: orange;
+}
+
+.poisktext,
+.poisktext1,
+.poisktext2,
+.poisktext3,
+.poisktext4,
+.poisktext5 {
+    margin-left: 100px;
+}
+
+.q1 span:hover {
+    transition: all 0.3s ease;
+    color: orange;
+}
+
+.foto15 {
+    position: relative;
+    right: 190px;
+    top: 50px;
+    animation: rotate-reverse 50s linear infinite;
+}
+
+.foto14 {
+    position: relative;
+    left: 240px;
+    top: 90px;
+    animation: rotate 40s linear infinite;
+}
+
+.menu2 {
+    width: 430px;
+    height: 90px;
+    position: relative;
+    left: 780px;
+    top: -300px;
+}
+
+.eat3 {
+    width: 80px;
+    height: 79px;
+    border-radius: 10px;
+}
+
+.divtext {
+    color: white;
+    font-size: 20px;
+    position: relative;
+    left: 5px;
+    top: -65px;
+}
+
+.divtext1 {
+    color: white;
+    position: relative;
+    top: -75px;
+    left: 90px;
+    width: max-content;
+}
+
+.divtext2 {
+    color: orange;
+    position: relative;
+    left: 90px;
+    top: -90px;
+}
+
+.menu3 {
+    width: 430px;
+    height: 90px;
+    position: relative;
+    left: 780px;
+    top: -290px;
+}
+
+.menu4 {
+    width: 430px;
+    height: 90px;
+    position: relative;
+    left: 780px;
+    top: -280px;
+}
+
+.menu5 {
+    width: 430px;
+    height: 90px;
+    position: relative;
+    left: 780px;
+    top: -270px;
+}
+
+.menu6 {
+    width: 430px;
+    height: 90px;
+    position: relative;
+    left: 1250px;
+    top: -657px;
+}
+
+.menu7 {
+    width: 430px;
+    height: 90px;
+    position: relative;
+    left: 1250px;
+    top: -647px;
+}
+
+.menu8 {
+    width: 430px;
+    height: 90px;
+    position: relative;
+    left: 1250px;
+    top: -637px;
+}
+
+.menu9 {
+    width: 430px;
+    height: 90px;
+    position: relative;
+    left: 1250px;
+    top: -627px;
+}
+
+/* 7 страница */
+
+.Chefs {
+    margin-bottom: 120px;
+}
+
+.text24 {
+    font-family: "Great Vibes", cursive;
+    color: orange;
+
+    position: relative;
+    left: 910px;
+}
+
+.text25 {
+    color: white;
+    position: relative;
+    left: 850px;
+}
+
+.colortext6 {
+    color: orange;
+}
+
+.shef {
+    border-radius: 10px;
+    position: relative;
+    left: 260px;
+    width: max-content;
+}
+
+.knopka2-a {
+    color: white;
+    text-decoration: none;
+}
+
+.shef2 {
+    margin-left: 24px;
+}
+
+.knopka2 {
+    background-color: black;
+    border-color: orange;
+    position: relative;
+    left: 868px;
+    top: 20px;
+}
+
+/* 8 страница */
+
+.Testimonials {
+    margin-bottom: 120px;
+}
+
+.text26 {
+    color: orange;
+    font-family: "Great Vibes", cursive;
+    position: relative;
+    left: 304px;
+}
+
+.text27 {
+    color: white;
+    font-size: 48px;
+    position: relative;
+    left: 304px;
+    margin-bottom: 123px;
+}
+
+.divblock {
+    width: 868.46923828125px;
+    height: 450.8892517089844px;
+    background-color: #FFFFFF;
+    position: relative;
+    left: 520px;
+}
+
+.pepel1 {
+    border-radius: 100%;
+    position: relative;
+    left: 368px;
+    top: -67px;
+}
+
+.nine {
+    position: relative;
+    left: 270px;
+}
+
+.text28 {
+    text-align: center;
+}
+
+.fotoblock1 {
+    position: relative;
+    left: 350px;
+    top: 10px;
+}
+
+.text29 {
+    position: relative;
+    top: 60px;
+    left: 195px;
+    font-size: 24px;
+}
+
+.text30 {
+    position: relative;
+    top: 100px;
+    left: 70px;
+    color: grey;
+}
+
+.peremes {
+    position: relative;
+    left: 900px;
+    top: 20px;
+}
+
+/* 9 страница */
+
+.rolik {
+    height: 560px;
+    position: relative;
+    margin-bottom: 120px;
+}
+
+.text31 {
+    color: orange;
+    font-family: "Great Vibes", cursive;
+    text-align: right;
+    position: relative;
+    top: -446px;
+    left: 1377px;
+    width: max-content;
+}
+
+.text32 {
+    color: white;
+    text-align: right;
+    position: relative;
+    top: -446px;
+    left: 1240px;
+    width: max-content;
+}
+
+.colortext7 {
+    color: orange;
+}
+
+.text33 {
+    color: white;
+    text-align: right;
+    position: relative;
+    top: -446px;
+    left: 960px;
+    width: max-content;
+}
+
+.knopka3 {
+    width: 190px;
+    height: 60px;
+    position: relative;
+    left: 1200px;
+    top: -426px;
+    background-color: transparent;
+    border-radius: 30px;
+    border-color: orange;
+}
+
+.knopka4 {
+    width: 60px;
+    height: 60px;
+    border: 1px;
+    border-radius: 100%;
+    position: relative;
+    left: 1220px;
+    top: -420px;
+}
+
+.text34 {
+    font-size: 16px;
+    position: relative;
+    left: 1230px;
+    top: -425px;
+    color: white;
+}
+
+/* 9 страница */
+
+.text35 {
+    color: orange;
+    font-family: "Great Vibes", cursive;
+    position: relative;
+    left: 898px;
+}
+
+.text36 {
+    color: white;
+    position: relative;
+    left: 840px;
+}
+
+.colortext8 {
+    color: orange;
+}
+
+.divblock1 {
+    display: flex;
+    margin-left: 300px;
+}
+
+.divblock2 {
+    width: 424px;
+    height: 569px;
+    border-color: white;
+    border: 1px solid white;
+}
+
+.divblock3 {
+    width: 424px;
+    height: 569px;
+    border-color: white;
+    margin-left: 24px;
+    border: 1px solid white;
+}
+
+.divblock4 {
+    width: 424px;
+    height: 569px;
+    border-color: white;
+    margin-left: 24px;
+    border: 1px solid white;
+}
+
+.textcolor {
+    margin-left: 43px;
+    color: orange;
+    font-size: 16px;
+}
+
+.text-block {
+    margin-left: 43px;
+    color: white;
+    font-size: 24px;
+}
+
+.div-text {
+    margin-left: 43px;
+    color: white;
+    font-size: 16px;
+    position: relative;
+    top: 20px;
+}
+
+
+/* footer */
+
+footer {
+    height: 600px;
+}
+
+.footer-menu {
+    padding-top: 120px;
+}
+
+.start-footer {
+    display: grid;
+    place-self: center;
+    width: 1170px;
+    height: 143px;
+    border-bottom: 2px solid orange;
+}
+
+.start-glav-footer-text {
+    font-size: 32px;
+    width: fit-content;
+    color: white;
+}
+
+.start-footer-text {
+    font-size: 16px;
+    color: white;
+    position: relative;
+    top: -20px;
+    width: fit-content;
+}
+
+.part-start-footer {
+    width: 459px;
+    height: 56px;
+    background-color: orange;
+    border-radius: 10px;
+    position: relative;
+    left: 710px;
+    top: -70px;
+}
+
+.part-start-footer-text {
+    color: white;
+    position: relative;
+    left: 20px;
+    top: 16px;
+}
+
+.par2t-start-footer {
+    width: 163px;
+    height: 56px;
+    background-color: white;
+    border-radius: 10px;
+    position: relative;
+    left: 297px;
+    top: -18px;
+}
+
+.part-start-footer-text2 {
+    color: orange;
+    position: relative;
+    left: 26px;
+    top: 18px;
+}
+
+.aa {
+    text-decoration: none;
+    color: orange;
+}
+
+.aaa {
+    text-decoration: none;
+    color: white;
+}
+
+.footer-glav-text {
+    color: white;
+    margin-left: 200px;
+}
+
+.footer-text {
+    color: white;
+    margin-left: 200px;
+    word-spacing: 5px;
+    width: max-content;
+}
+
+.footer-img {
+    margin-left: 200px;
+    border-radius: 10px;
+}
+
+.footer-text2 {
+    position: absolute;
+    color: white;
+}
+
+.footer-nav-link {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.nav-footer {
+    height: 80px;
+}
+
+.footer-nav {
+    position: relative;
+    left: 745px;
+    top: -260px;
+    width: max-content;
+}
+
+.footer-nav-list {
+    margin-top: 20px;
+}
+
+.footer-text-h1 {
+    color: white;
+}
+
+
+.footer-nav-link1 {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.footer-nav1 {
+    position: relative;
+    left: 1087px;
+    top: -568px;
+    width: max-content;
+}
+
+.footer-nav-list1 {
+    margin-top: 20px;
+}
+
+.end-footer {
+    width: 100%;
+    height: 100px;
+    background-color: orange;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.end-footer-text {
+    color: white;
+    position: relative;
+    left: 200px;
+}
+
+.end-footer-img {
+    width: 240px;
+    height: 34px;
+    position: relative;
+    right: 200px;
+}
+
+::selection {
+    background-color: orange;
+    color: #FFFFFF;
+}
+
+/* * {
+    outline: 1px red solid;
+} */
+
+.textcolor {
+    width: max-content;
+}
+
+.div-text {
+    width: max-content;
+}
+
+ul {
+    width: max-content;
+}
+
+
+
+.suggestions div {
+    color: orange;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.suggestions div:hover {
+    color: white;
+}
+
+
+.header-link:hover {
+    box-shadow: 0px 5px 0px rgba(255, 136, 0, 0.719);
+}
+
+.header-links:hover {
+    box-shadow: 0px 5px 0px rgba(255, 136, 0, 0.719);
+}
+
+.card:hover {
+    width: 307px;
+    height: 325px;
+}
+
+.img-card:hover {
+    width: 307px;
+    height: 262px;
+}
+
+.close:hover,
+.close:focus {
+    cursor: pointer;
+}
